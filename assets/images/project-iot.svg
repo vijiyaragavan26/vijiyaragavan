@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iotBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071325"/>
+      <stop offset="100%" stop-color="#0f294a"/>
+    </linearGradient>
+    <linearGradient id="iotCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <filter id="iotGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#iotBg)"/>
+
+  <!-- Telemetry Grid background -->
+  <g stroke="#06b6d4" stroke-width="0.7" opacity="0.15">
+    <path d="M0 60 H600 M0 120 H600 M0 180 H600 M0 240 H600 M0 300 H600" />
+    <path d="M60 0 V360 M120 0 V360 M180 0 V360 M240 0 V360 M300 0 V360 M360 0 V360 M420 0 V360 M480 0 V360 M540 0 V360" />
+  </g>
+
+  <!-- Central Microcontroller / IoT Node Graphic -->
+  <g transform="translate(60, 45)">
+    <!-- Circuit lines -->
+    <path d="M120 135 H200 M280 135 H360 M240 75 V40 M240 195 V230" stroke="#06b6d4" stroke-width="2" stroke-dasharray="4 4" opacity="0.8"/>
+    
+    <!-- Central Processing Unit Board -->
+    <rect x="180" y="75" width="120" height="120" rx="12" fill="#0b192c" stroke="#06b6d4" stroke-width="2.5" filter="url(#iotGlow)"/>
+    <rect x="200" y="95" width="80" height="80" rx="6" fill="#152843" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="240" y="132" font-family="monospace" font-size="12" font-weight="bold" fill="#38bdf8" text-anchor="middle">ESP32 / IoT</text>
+    <text x="240" y="152" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">MCU NODE</text>
+    
+    <!-- Board Pins -->
+    <g fill="#f59e0b">
+      <rect x="172" y="90" width="8" height="6" rx="1"/>
+      <rect x="172" y="105" width="8" height="6" rx="1"/>
+      <rect x="172" y="120" width="8" height="6" rx="1"/>
+      <rect x="172" y="135" width="8" height="6" rx="1"/>
+      <rect x="172" y="150" width="8" height="6" rx="1"/>
+      <rect x="172" y="165" width="8" height="6" rx="1"/>
+
+      <rect x="300" y="90" width="8" height="6" rx="1"/>
+      <rect x="300" y="105" width="8" height="6" rx="1"/>
+      <rect x="300" y="120" width="8" height="6" rx="1"/>
+      <rect x="300" y="135" width="8" height="6" rx="1"/>
+      <rect x="300" y="150" width="8" height="6" rx="1"/>
+      <rect x="300" y="165" width="8" height="6" rx="1"/>
+    </g>
+
+    <!-- Antenna Waves -->
+    <path d="M225 25 A20 20 0 0 1 255 25" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+    <path d="M215 15 A35 35 0 0 1 265 15" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.4"/>
+    <path d="M205 5 A50 50 0 0 1 275 5" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.2"/>
+
+    <!-- Sensor 1: Temperature & Humidity Sensor Card -->
+    <g transform="translate(0, 75)">
+      <rect width="130" height="110" rx="10" fill="#0b192c" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="25" cy="25" r="10" fill="#ef4444" opacity="0.2"/>
+      <circle cx="25" cy="25" r="4" fill="#ef4444"/>
+      <text x="45" y="28" font-family="sans-serif" font-size="10" font-weight="700" fill="#e2e8f0">DHT11 SENSOR</text>
+      <text x="18" y="62" font-family="sans-serif" font-size="22" font-weight="800" fill="#f8fafc">28.4<tspan font-size="14" fill="#38bdf8">°C</tspan></text>
+      <text x="18" y="80" font-family="sans-serif" font-size="10" fill="#94a3b8">Humidity: 64%</text>
+      <rect x="18" y="92" width="94" height="4" rx="2" fill="#1e293b"/>
+      <rect x="18" y="92" width="60" height="4" rx="2" fill="#ef4444"/>
+    </g>
+
+    <!-- Sensor 2: Live Telemetry Graph Card -->
+    <g transform="translate(350, 75)">
+      <rect width="130" height="110" rx="10" fill="#0b192c" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="25" cy="25" r="10" fill="#10b981" opacity="0.2"/>
+      <circle cx="25" cy="25" r="4" fill="#10b981"/>
+      <text x="45" y="28" font-family="sans-serif" font-size="10" font-weight="700" fill="#e2e8f0">TELEMETRY</text>
+      <!-- Real-time Sparkline Wave -->
+      <path d="M15 75 L35 65 L55 80 L75 50 L95 68 L115 45" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="18" y="100" font-family="sans-serif" font-size="10" font-weight="600" fill="#10b981">● Live Signal: 99.8%</text>
+    </g>
+
+    <!-- Bottom Status Banner -->
+    <g transform="translate(60, 215)">
+      <rect width="360" height="42" rx="8" fill="#102a45" stroke="#0284c7" stroke-width="1"/>
+      <circle cx="25" cy="21" r="5" fill="#38bdf8"/>
+      <text x="40" y="25" font-family="sans-serif" font-size="11" font-weight="600" fill="#f1f5f9">Edge Computing • Real-Time Cloud Telemetry • C/Python</text>
+    </g>
+  </g>
+</svg>

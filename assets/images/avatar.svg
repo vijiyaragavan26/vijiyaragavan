@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#112240"/>
+      <stop offset="100%" stop-color="#1f3a60"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)"/>
+  
+  <!-- Outer glowing tech ring -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+  <circle cx="200" cy="200" r="176" fill="url(#glowGrad)"/>
+
+  <!-- Geometric Abstract Network Grid Behind Avatar -->
+  <g opacity="0.25" stroke="#38bdf8" stroke-width="1.2">
+    <line x1="100" y1="80" x2="200" y2="40" />
+    <line x1="200" y1="40" x2="300" y2="80" />
+    <line x1="300" y1="80" x2="350" y2="180" />
+    <line x1="350" y1="180" x2="280" y2="280" />
+    <line x1="120" y1="280" x2="50" y2="180" />
+    <line x1="50" y1="180" x2="100" y2="80" />
+    <circle cx="100" cy="80" r="3" fill="#38bdf8"/>
+    <circle cx="200" cy="40" r="3" fill="#38bdf8"/>
+    <circle cx="300" cy="80" r="3" fill="#38bdf8"/>
+    <circle cx="350" cy="180" r="3" fill="#38bdf8"/>
+    <circle cx="50" cy="180" r="3" fill="#38bdf8"/>
+  </g>
+
+  <!-- Stylized Tech Developer Avatar Silhouette -->
+  <!-- Shoulders / Torso -->
+  <path d="M110 370 C110 290 145 255 200 255 C255 255 290 290 290 370 Z" fill="#1b2a47" stroke="#2563eb" stroke-width="2"/>
+  
+  <!-- Collar / Shirt Detail -->
+  <path d="M175 255 L200 290 L225 255 Z" fill="#233554"/>
+  <path d="M185 256 L200 280 L215 256" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+
+  <!-- Neck -->
+  <rect x="186" y="215" width="28" height="44" rx="6" fill="#e2e8f0"/>
+
+  <!-- Head Base -->
+  <ellipse cx="200" cy="170" rx="52" ry="60" fill="#f1f5f9"/>
+
+  <!-- Hair Modern Cut -->
+  <path d="M148 165 C146 120 165 95 200 95 C238 95 255 120 252 165 C244 140 236 125 200 125 C164 125 156 140 148 165 Z" fill="#0b1329"/>
+  <path d="M152 145 C150 110 170 90 200 88 C235 88 250 112 248 145 C236 115 220 108 198 108 C176 108 162 118 152 145 Z" fill="#1e293b"/>
+
+  <!-- Smart Glasses / Tech Specs -->
+  <g stroke="#38bdf8" stroke-width="3" fill="none">
+    <rect x="160" y="152" width="32" height="24" rx="6" fill="#0f172a" fill-opacity="0.4"/>
+    <rect x="208" y="152" width="32" height="24" rx="6" fill="#0f172a" fill-opacity="0.4"/>
+    <line x1="192" y1="164" x2="208" y2="164"/>
+    <line x1="152" y1="160" x2="160" y2="162"/>
+    <line x1="240" y1="162" x2="248" y2="160"/>
+  </g>
+  <!-- Spec reflection -->
+  <line x1="166" y1="156" x2="174" y2="170" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+  <line x1="214" y1="156" x2="222" y2="170" stroke="#ffffff" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Subtle Smile -->
+  <path d="M188 202 Q200 212 212 202" fill="none" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Front Monogram Floating Badge -->
+  <g transform="translate(260, 260)" filter="url(#dropGlow)">
+    <circle cx="36" cy="36" r="34" fill="#0a192f" stroke="url(#accentGrad)" stroke-width="2.5"/>
+    <text x="36" y="44" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#38bdf8" text-anchor="middle" letter-spacing="1">VV</text>
+  </g>
+
+  <!-- Status Indicator Dot -->
+  <circle cx="295" cy="235" r="7" fill="#10b981" stroke="#0a192f" stroke-width="2"/>
+</svg>

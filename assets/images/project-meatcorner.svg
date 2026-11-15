@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mcBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="warmAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" rx="16" fill="url(#mcBg)"/>
+
+  <!-- Subtle grid lines -->
+  <g stroke="#38bdf8" stroke-width="0.5" opacity="0.1">
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+  </g>
+
+  <!-- Browser Frame -->
+  <g transform="translate(45, 35)">
+    <rect width="510" height="290" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Top Bar -->
+    <path d="M0 12 Q0 0 12 0 L498 0 Q510 0 510 12 L510 42 L0 42 Z" fill="#1e293b"/>
+    <circle cx="22" cy="21" r="5" fill="#ef4444"/>
+    <circle cx="38" cy="21" r="5" fill="#f59e0b"/>
+    <circle cx="54" cy="21" r="5" fill="#10b981"/>
+
+    <!-- App Brand -->
+    <text x="80" y="26" font-family="sans-serif" font-size="13" font-weight="800" fill="#f97316">Meat<tspan fill="#ffffff">Corner</tspan></text>
+    
+    <!-- Navigation Pill Links -->
+    <rect x="230" y="14" width="45" height="14" rx="7" fill="#334155"/>
+    <rect x="285" y="14" width="45" height="14" rx="7" fill="#334155"/>
+    <rect x="340" y="14" width="45" height="14" rx="7" fill="#334155"/>
+
+    <!-- Cart Icon with badge -->
+    <circle cx="475" cy="21" r="12" fill="#334155"/>
+    <path d="M468 18 H471 L474 25 H482 L484 20 H473" stroke="#f8fafc" stroke-width="1.2" fill="none"/>
+    <circle cx="484" cy="14" r="5" fill="#ef4444"/>
+    <text x="484" y="17" font-family="sans-serif" font-size="8" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+
+    <!-- Hero Banner inside app -->
+    <rect x="20" y="55" width="470" height="75" rx="8" fill="url(#warmAccent)" opacity="0.9"/>
+    <text x="40" y="85" font-family="sans-serif" font-size="16" font-weight="800" fill="#ffffff">Fresh Cuts, Delivered Fast</text>
+    <text x="40" y="105" font-family="sans-serif" font-size="11" fill="#fef2f2">Farm fresh chicken &amp; meat directly to your doorstep</text>
+    
+    <!-- Product Grid -->
+    <!-- Card 1 -->
+    <g transform="translate(20, 142)">
+      <rect width="145" height="132" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="10" y="10" width="125" height="60" rx="6" fill="#334155"/>
+      <circle cx="72" cy="40" r="18" fill="#f97316" opacity="0.3"/>
+      <text x="72" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fdba74" text-anchor="middle">Fresh Breast</text>
+      <text x="12" y="86" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Chicken Breast</text>
+      <text x="12" y="100" font-family="sans-serif" font-size="10" fill="#94a3b8">500g • Boneless</text>
+      <text x="12" y="122" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">₹199</text>
+      <rect x="90" y="108" width="45" height="18" rx="4" fill="#f97316"/>
+      <text x="112" y="121" font-family="sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">+ Add</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(182, 142)">
+      <rect width="145" height="132" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="10" y="10" width="125" height="60" rx="6" fill="#334155"/>
+      <circle cx="72" cy="40" r="18" fill="#f97316" opacity="0.3"/>
+      <text x="72" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fdba74" text-anchor="middle">Curry Cut</text>
+      <text x="12" y="86" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Fresh Curry Cut</text>
+      <text x="12" y="100" font-family="sans-serif" font-size="10" fill="#94a3b8">1000g • Skinless</text>
+      <text x="12" y="122" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">₹240</text>
+      <rect x="90" y="108" width="45" height="18" rx="4" fill="#f97316"/>
+      <text x="112" y="121" font-family="sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">+ Add</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(345, 142)">
+      <rect width="145" height="132" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <rect x="10" y="10" width="125" height="60" rx="6" fill="#334155"/>
+      <circle cx="72" cy="40" r="18" fill="#f97316" opacity="0.3"/>
+      <text x="72" y="44" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fdba74" text-anchor="middle">Drumsticks</text>
+      <text x="12" y="86" font-family="sans-serif" font-size="11" font-weight="700" fill="#f8fafc">Chicken Drumsticks</text>
+      <text x="12" y="100" font-family="sans-serif" font-size="10" fill="#94a3b8">6 Pcs • Juicy</text>
+      <text x="12" y="122" font-family="sans-serif" font-size="12" font-weight="800" fill="#38bdf8">₹220</text>
+      <rect x="90" y="108" width="45" height="18" rx="4" fill="#f97316"/>
+      <text x="112" y="121" font-family="sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">+ Add</text>
+    </g>
+  </g>
+</svg>
